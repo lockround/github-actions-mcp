@@ -1,0 +1,9 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/mcp.ts": {
+      "maxDuration": 30,
+      "runtime": "nodejs20.x"
+    }
+  }
+}
