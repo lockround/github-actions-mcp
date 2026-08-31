@@ -1,9 +1,12 @@
 import { defineConfig } from "tsup";
 
 export default defineConfig({
-  entry: ["src/index.ts"],
+  entry: {
+    index: "src/serverless.ts",
+    cli: "src/index.ts",
+  },
   format: ["esm"],
-  target: "node18",
+  target: "node20",
   clean: true,
   dts: false,
   banner: {
